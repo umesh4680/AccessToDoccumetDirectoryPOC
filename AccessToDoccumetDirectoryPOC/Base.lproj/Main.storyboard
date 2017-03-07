@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AccessToDoccumetDirectoryPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name of file to create in Doc Directory" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2rK-UG-TnU">
+                                <rect key="frame" x="16" y="119" width="336" height="37"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="xjq-mw-gHZ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMZ-A2-ff9">
+                                <rect key="frame" x="16" y="250" width="336" height="37"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="58v-Ta-YYc"/>
+                                </constraints>
+                                <state key="normal" title="Create File"/>
+                                <connections>
+                                    <action selector="createFileButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vi1-75-7uJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LMZ-A2-ff9" firstAttribute="top" secondItem="2rK-UG-TnU" secondAttribute="bottom" constant="94" id="DIG-Dd-P8P"/>
+                            <constraint firstItem="LMZ-A2-ff9" firstAttribute="height" secondItem="2rK-UG-TnU" secondAttribute="height" id="DOc-Qp-V6S"/>
+                            <constraint firstItem="LMZ-A2-ff9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="GXD-Vl-Oer"/>
+                            <constraint firstAttribute="trailing" secondItem="2rK-UG-TnU" secondAttribute="trailing" constant="23" id="Ne9-7d-W0R"/>
+                            <constraint firstItem="LMZ-A2-ff9" firstAttribute="width" secondItem="2rK-UG-TnU" secondAttribute="width" id="WWV-Cn-Xys"/>
+                            <constraint firstItem="2rK-UG-TnU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="tX0-E9-7G6"/>
+                            <constraint firstItem="2rK-UG-TnU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="99" id="vpJ-ju-WGM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fileNameTextField" destination="2rK-UG-TnU" id="5b1-rv-9nY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.399999999999999" y="22.938530734632685"/>
+        </scene>
+    </scenes>
+</document>
